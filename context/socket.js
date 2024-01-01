@@ -22,6 +22,7 @@ export const SocketProvider = (props) => {
     console.log("Error establishing socket", err)
     await fetch('/api/socket')
   })
+  //api apne aap call nahi hoga islie we call the api manually
 
   return (
     <SocketContext.Provider value={socket}>{children}</SocketContext.Provider>
