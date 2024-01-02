@@ -1,5 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
 import { useRouter } from 'next/navigation'
+
+import styles from '@/styles/home.module.css'
 import { useState } from 'react';
 
 export default function Home() {
@@ -18,17 +20,14 @@ export default function Home() {
     }
   }
   return (
-    <div className="w-full h-[100vh] p-2 rounded text-white flex flex-col items-center">
-      <div className="w-full flex flex-row justify-around">
-        <h1>Random Meet</h1>
+    <div className={styles.homeContainer}>
+        <h1>Google Meet Clone</h1>
+        <div className={styles.enterRoom}>
+          <input placeholder='Enter Room ID' value={roomId} onChange={(e) => setRoomId(e?.target?.value)}/>
+          <button onClick={joinRoom}>Join Room</button>
         </div>
-        <h1 className="text-center text-xxl ">Enjoy your meet without google listening to it XD</h1>
-        <div className="flex w-[500px] items-center mt-3" >
-          <input className="text-black text-lg p-1 rounded w-full mb-3" placeholder='Enter Room ID' value={roomId} onChange={(e) => setRoomId(e?.target?.value)}/>
-          <button onClick={joinRoom} className=" bg-buttonPrimary py-2 px-4 rounded ">Join Room</button>
-        </div>
-        <span  className=" my-3 text-xl" >--------------- OR ---------------</span>
-        <button className=" bg-buttonPrimary py-2 px-4 rounded" onClick={createAndJoin}>Create a new room</button>
+        <span  className={styles.separatorText} >--------------- OR ---------------</span>
+        <button onClick={createAndJoin}>Create a new room</button>
     </div>
   )
 }
