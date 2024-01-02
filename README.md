@@ -1,4 +1,4 @@
-Random Meet
+##Random Meet
 
 Random Meet is a google meet clone which has been built using webRTC and the topology used is Mesh topology.
 
@@ -11,7 +11,7 @@ Random Meet is a google meet clone which has been built using webRTC and the top
 
 
 
-Steps to run the code -
+##Steps to run the code -
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
