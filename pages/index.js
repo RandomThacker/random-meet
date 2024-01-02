@@ -20,11 +20,9 @@ export default function Home() {
     }
   }
   return (
-    <div className={styles.homeContainer}>
-        <h1>Google Meet Clone</h1>
-        <div className={styles.enterRoom}>
-          <input placeholder='Enter Room ID' value={roomId} onChange={(e) => setRoomId(e?.target?.value)}/>
-          <button onClick={joinRoom}>Join Room</button>
+    <div className="w-full h-[100vh] p-2 rounded text-white flex flex-col items-center">
+      <div className="w-full flex flex-row justify-around">
+        <h1>Random Meet</h1>
         </div>
         <span  className={styles.separatorText} >--------------- OR ---------------</span>
         <button onClick={createAndJoin}>Create a new room</button>
