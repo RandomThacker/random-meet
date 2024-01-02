@@ -1,11 +1,10 @@
-import { v4 as uuidv4 } from "uuid"
-import { useRouter } from "next/router"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
- 
-import {useState}  from "react"
+import { v4 as uuidv4 } from 'uuid';
+import { useRouter } from 'next/navigation'
+import { useState } from 'react';
+
 export default function Home() {
-  const router = useRouter();
-  const[roomId, setRoomId] = useState("")
+  const router = useRouter()
+  const [roomId, setRoomId] = useState('')
 
   const createAndJoin = () => {
     const roomId = uuidv4()
@@ -14,11 +13,10 @@ export default function Home() {
 
   const joinRoom = () => {
     if (roomId) router.push(`/${roomId}`)
-    else{
-  alert("Please provide a valid room id")
+    else {
+      alert("Please provide a valid room id")
+    }
   }
-  }
-
   return (
     <div className="w-full h-[100vh] p-2 rounded text-white flex flex-col items-center">
       <div className="w-full flex flex-row justify-around">
