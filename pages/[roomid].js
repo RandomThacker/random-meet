@@ -6,4 +6,4 @@ const Room = () =>{
     const {peer,myId} = usePeer()
 }
 
-export default room
+export default Room
