@@ -14,16 +14,9 @@ module.exports = {
       },
       colors: {
         prime: '#212529',
-        secondary:'#343a40',
-        buttonPrimary:'#d90429'
-      },
-      margin: {
-        '0': '0',
-      },
-      padding: {
-        '0': '0',
-      },
-
+        secondary: '#343a40',
+        buttonPrimary: '#d90429'
+      }
     },
   },
   plugins: [],

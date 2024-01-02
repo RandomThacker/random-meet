@@ -15,19 +15,14 @@ const usePeer = () => {
         isPeerSet.current = true;
         let myPeer;
         (async function initPeer() {
-            try{
-                myPeer = new (await import('peerjs')).default()
-                setPeer(myPeer)
-    
-                myPeer.on('open', (id) => {
-                    console.log(`your peer id is ${id}`)
-                    setMyId(id)
-                    socket?.emit('join-room', roomId, id)
-                })
-            }
-            catch(e){
-                console.log(e);
-            }
+            myPeer = new (await import('peerjs')).default()
+            setPeer(myPeer)
+
+            myPeer.on('open', (id) => {
+                console.log(`your peer id is ${id}`)
+                setMyId(id)
+                socket?.emit('join-room', roomId, id)
+            })
         })()
     }, [roomId, socket])
 
