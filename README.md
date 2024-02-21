@@ -20,7 +20,9 @@ Random Meet is a Google Meet clone that has been built using webRTC and the topo
 
 ## 💻 Tech-Stack 
 -Frontend: Next.js + Redux Toolkit + WebRTC + PeerJs
+
 -Real-time Collaboration: WebSocket & Signaling via Socket.IO
+
 -Server: NodeJs + ExpressJs
 
 
