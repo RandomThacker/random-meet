@@ -29,7 +29,7 @@ To set up the Food Ordering App project locally, follow these steps:
 
 1. Clone the repository:
     ```bash
-    [https://github.com/RandomThacker/random-meet.git](https://github.com/RandomThacker/random-meet.git)
+    https://github.com/RandomThacker/random-meet.git
     ```
 
 2. Navigate to the project directory:
