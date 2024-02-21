@@ -4,35 +4,21 @@ Random Meet is a google meet clone which has been built using webRTC and the top
 
 ![image](https://github.com/RandomThacker/random-meet/assets/141705990/27df8665-362e-4837-bf4c-56f03a192c49)
 
-# Random Eats
-
-Welcome to 'Random Eats,' a React-fueled delight that turns food ordering into a thrilling adventure! With Swiggy's real-time API, our platform adds a pinch of randomness to every meal – because why settle for ordinary when you can savor the unexpected?  🍔🛵
-
-
 ## 🔗 Live link
 
-**[https://randomeats.vercel.app/](https://randomeats.vercel.app/)**
+**[https://randommeet.vercel.app/](https://randommeet.vercel.app/)**
 
 
 ## 📓Features 
-- Implemented dynamic routing using *react-router-dom*
-- Utilized *Redux Toolkit* for efficient cart management
-- Integrated custom hooks for enhanced functionality
-- Implemented a search bar for convenient restaurant exploration
-- Incorporated a *custom shimmer UI* for improved user experience
-- Implemented lazy loading for optimized performance
-- Ensured complete responsiveness for a seamless user interface
-- Cart feature allows users to add and remove items from their shopping cart.
-- Filter offers a convenient option to display only selected menu items
+-Real-time Video Calling: Enjoy seamless video calls with peers in real-time, akin to Google Meet, powered by WebRTC technology.
+-Efficient State Management: Redux Toolkit ensures smooth data flow and easy debugging, enhancing the user experience.
+-WebSocket & Signaling: Real-time collaboration is facilitated through WebSocket communication and signaling via Socket.IO, enabling instant data exchange between clients.
+-Stream Handling: Smooth transmission and reception of audio and video streams ensure a seamless communication experience during video calls.
 
 ## 💻 Tech-Stack 
-- Frontend Library: React 
-- Styling: Tailwind CSS 
-- State Management: Redux Toolkit 
-- Package Manager: npm 
-- Transpiler: Babel
-- Routing: React Router
-- SwiggyAPI: Fetches restaurant and menu data for the app.
+-Frontend: Next.js + Redux Toolkit + WebRTC + PeerJs
+-Real-time Collaboration: WebSocket & Signaling via Socket.IO
+-Server: NodeJs + ExpressJs
 
 
 ## ⚙️Installation 
